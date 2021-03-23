@@ -37,7 +37,7 @@ endef
 CONFIGURE_ARGS+= \
 	--enable-filter \
 	--enable-transparent \
-	--disable-regexcheck \
+	--disable-regexcheck --enable-reverse \
 
 define Package/tinyproxy/install
 	$(INSTALL_DIR) $(1)/usr/sbin
